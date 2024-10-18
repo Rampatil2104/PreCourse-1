@@ -1,10 +1,3 @@
-//push(): O(1) 
-//pop(): O(1) 
-//peek(): O(1) 
-//isEmpty(): O(1)
-//SC O(N);
-
-
 #include <bits/stdc++.h> 
   
 using namespace std; 
@@ -14,19 +7,16 @@ using namespace std;
 class Stack {
   //Please read sample.java file before starting.
   //Kindly include Time and Space complexity at top of each file
-    int top;
+    int top =-1; 
   
 public: 
     int a[MAX]; // Maximum size of Stack 
   
     Stack() { //Constructor here } 
-    top =-1;
-    }
     bool push(int x); 
     int pop(); 
     int peek(); 
     bool isEmpty(); 
-
 }; 
   
 bool Stack::push(int x) 
@@ -61,9 +51,9 @@ int Stack::peek()
   
 bool Stack::isEmpty() 
 { 
-    //Your code here 
-    if(top<0) return true;
+    if(top<1) return true;
     else return false;
+    //Your code here 
 } 
   
 // Driver program to test above functions 
